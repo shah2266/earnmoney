@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="nav-bar">
+                <div class="brand">
+                    <a href="index.html">
+                        <span class="icon"></span>
+                        <span class="text">Cash crafters</span>
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="platform.html">Platform</a></li>
+                        <li class="active"><a href="faq.html">Faq</a></li>
+                        <li><a href="inquiry.html">Inquiry</a></li>
+                    </ul>
+
+                    <div class="hamburger-menu" id="toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <ul class="overlay-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="platform.html">Platform</a></li>
+                            <li class="active"><a href="faq.html">Faq</a></li>
+                            <li><a href="inquiry.html">Inquiry</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <!--#end navbar-->
+        </div>
+
+        <div class="container" style="margin-top: 3em;">
+            <h1 class="text-centered">Frequently ask questions (FAQ):</h1>
+            <p class="text-centered">Welcome to our FAQ Page<br>We're here to help you find answers to common questions.
+            </p>
+            <div class="d-flex faq">
+                <div class="col-4">
+                    <!-- <a href="#" class="toggle question">
+                        BDTGame is a game-generating app?
+                    </a>
+                    <div class="answer">
+                        <p>A prediction website like Jeetwin and Mostplay, the BDTGame app lets users get money by
+                            making predictions about the colors red and green. How To Play As Well As Use. A prediction
+                            website like Jeetwin and Mostplay, the BDTGame app lets users get money by making
+                            predictions about the colors red and green. How To Play As Well As Use.</p>
+                    </div> -->
+                    <a href="#" class="toggle question">
+                        What is BDTGAME.CC gift code?
+                    </a>
+                    <div class="answer">
+                        <p>From here you will get the gift code. If you want to get rewards with redeem code, you must
+                            click on the gift exchange button and enter your redeem code in the box that appears and
+                            claim</p>
+                    </div>
+
+                    <a href="#" class="toggle question">
+                        BDTGAME.CC Earning proof?</a>
+                    <div class="answer">
+                        <p>I have already received a reward of 2000 taka. If you also want to get rewards then
+                            definitely join my refer code <a href="#">BDTgame</a></p>
+                    </div>
+                    <a href="#" class="toggle question">How Does Color Prediction Work?</a>
+                    <div class="answer">
+                        <p>A prediction website like Jeetwin and Mostplay, the BDTGame app lets users get money by
+                            making predictions about the colors red and green. How To Play As Well As Use. A prediction
+                            website likeJeetwin and Mostplay, the BDTGame app lets users get money by making predictions
+                            about the colors red and green. How To Play As Well As Use.</p>
+                        <p>In the game of “Color Prediction,” your goal is to correctly predict a color in order to win.
+                        </p>
+                    </div>
+                    <a href="#" class="toggle question">Customer Support for BDTGame App?</a>
+                    <div class="answer">
+                        <p>You can use Live Chat or Your Teacher with any questions you have about deposits or
+                            withdrawals.</p>
+                    </div>
+
+                    <a href="#" class="toggle question">Games Available in BDTGame?</a>
+                    <div class="answer">
+                        <p>You can predict color in BDTGame in the phase of the sequence.</p>
+                    </div>
+
+                    <a href="#" class="toggle question">BDTGame hack?</a>
+                    <div class="answer">
+                        <p>BDTGame hack is not available on any app or website</p>
+                    </div>
+
+                    <a href="#" class="toggle question">Is BDTGame Download App Free?</a>
+                    <div class="answer">
+                        <p>Yes</p>
+                    </div>
+
+                    <a href="#" class="toggle question">BDTGame real or fake</a>
+                    <div class="answer">
+                        <p>BDTGame app is a 100% real and genuine app to make money by predicting colors and number
+                            BDTGame real app 100%</p>
+                    </div>
+
+                    <a href="#" class="toggle question">What is the BDTGame Official Website?</a>
+                    <div class="answer">
+                        <p>
+                            BDTGame online here is a link click and go and play BDTGame online<a
+                                href="https://bdtcasino.cc/#/register?invitationCode=5751274506">https://Bdtgames.cc</a>
+                        </p>
+                    </div>
+
+                    <a href="#" class="toggle question">Is BDTGame safe?</a>
+                    <div class="answer">
+                        <p>BDTGame is a safe application, in which you can earn money by playing color prediction and
+                            games.</p>
+                        <a href="https://bdtgame.vip/">https://bdtgame.vip/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <footer>
+        <a href="#">Copyright 2022-2023 cashcrafters | All right reserved</a>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+            $('#overlay').toggleClass('open');
+        });
+
+        $('.toggle').click(function (e) {
+            e.preventDefault();
+            var notthis = $('.active').not(this);
+            // notthis.find('.icon-minus').addClass('icon-plus').removeClass('icon-minus');
+            notthis.toggleClass('active').next('.answer').slideToggle(300);
+            $(this).toggleClass('active').next().slideToggle("fast");
+            // $(this).children('i').toggleClass('icon-plus icon-minus');
+        });
+    </script>
+</body>
+
+</html>

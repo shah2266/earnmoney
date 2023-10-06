@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="nav-bar">
+                <div class="brand">
+                    <a href="index.html">
+                        <span class="icon"></span>
+                        <span class="text">Cash crafters</span>
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="inquiry.html">Inquiry</a></li>
+                    </ul>
+
+                    <div class="hamburger-menu" id="toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <ul class="overlay-menu">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="platform.html">Platform</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="inquiry.html">Inquiry</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <!--#end navbar-->
+
+            <article class="header-content">
+                <div class="content img-animation">
+                    <img src="images/bitcoin-1.png" alt="Icon" class="icon icon-1">
+                    <img src="images/bitcoin-2.png" alt="Icon" class="icon icon-2">
+                    <img src="images/bitcoin-3.png" alt="Icon" class="icon icon-3">
+                    <h2>Earn</h2>
+                    <h1>Money online</h1>
+                    <p>Welcome! Discover legitimate ways to earn money online here. Our mission is to provide you with
+                        trusted information, resources, and opportunities to help you achieve financial success. Explore
+                        our
+                        content and start your journey to financial empowerment today.</p>
+                    <a href="#" class="button">Get started</a>
+                </div>
+                <div>
+                    <img src="images/hero.png" alt="dollar" class="dollar-animation">
+                </div>
+            </article>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <h2>Why choose us</h2>
+            <p class="text-centered">Experience excellence and commitment. Choose us for your success, <br>where
+                every solution is tailored to your needs, and your goals become our mission.</p>
+            <div class="widgets">
+                <div class="widget">
+                    <img src="images/protection.png" alt="Secure and Safe">
+                    <strong>100% Secure and Safe</strong>
+                </div>
+
+                <div class="widget">
+                    <img src="images/refund.png" alt="Cash back">
+                    <strong>Instant cash back</strong>
+                </div>
+
+                <div class="widget">
+                    <img src="images/24-7.png" alt="Supports">
+                    <strong>24/7 Hours supports</strong>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section section-bg">
+        <div class="container">
+            <h2>Work from home</h2>
+            <p class="text-centered">Discover a better work-life balance from home, <br>Where productivity meets
+                comfort, and success meets
+                relaxation.</p>
+            <div class="info">
+                <div class="image">
+                    <img src="images/laptop.png" alt="image" class="img-1">
+                    <img src="images/smartphone_002.png" alt="image" class="img-2">
+                </div>
+                <div class="content">
+                    <h3>Access from Anywhere</h3>
+                    <p>Discover the numerous benefits of remote work, including the freedom to set your own schedule,
+                        resulting in improved work-life balance. Remote work eliminates lengthy commutes and allows you
+                        to spend more quality time with loved ones while often increasing overall productivity.</p>
+                    <a href="#" class="button">Get started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#">Copyright 2022-2023 cashcrafters | All right reserved</a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+</body>
+
+</html>
