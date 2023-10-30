@@ -676,6 +676,9 @@ header {
     margin-bottom: 1.5em;
 }
 
+.platform section:last-child {
+    border: none;
+}
 .platform a:hover {
     text-decoration: underline;
     color: var(--primary);
