@@ -629,7 +629,8 @@ header {
 }
 @media screen and (max-width: 768px) {
     .flexbox-image {
-        width: 50%;
+        width: 100%;
+        max-width: 300px;
         margin-inline: auto;
         margin-block: 0;
     }
@@ -640,6 +641,13 @@ header {
     object-fit: cover;
 }
 
+.deposit-step a {
+    margin-bottom: 1em;
+    display: block;
+}
+.deposit-step a img {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 .m-bottom {
     margin-bottom: 1em;
 }
@@ -779,6 +787,8 @@ header {
 
 .bonus img {
     max-width: 450px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
 }
 
 
