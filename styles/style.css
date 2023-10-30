@@ -317,16 +317,30 @@ header {
     }
 }
 
-.header-content {
+.hero-content {
+    padding-block: var(--section-padding);
+}
+.hero-content h1 + p {
+    margin-bottom: 3em;
+    font-weight: var(--weight-semi);
+    color: #4f5b6d;
+    opacity: .9;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content h1 + p {
+        margin-bottom: 2em;
+    }
+}
+.welcome-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-block: var(--section-padding);
 }
 
 @media screen and (min-width: 769px) {
-    .header-content div {
+    .welcome-content div {
         max-width: calc(100% / 2);
     }
     .img-animation .icon {
@@ -335,7 +349,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .header-content div:nth-child(2) {
+    .welcome-content div:nth-child(2) {
         display: none;
     }
     .img-animation {
@@ -653,18 +667,15 @@ header {
 }
 
 /* platform styles */
-
-.platform section {
-    border-bottom:1px solid var(--border-color);
-    margin-bottom: 1.5em;
-}
-.platform h2 {
-    text-align: left;
-}
 .platform a {
     color: #25a3dd;
     transition: all .35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.platform section {
+    border-bottom:1px solid var(--border-color);
+    margin-bottom: 1.5em;
+}
+
 .platform a:hover {
     text-decoration: underline;
     color: var(--primary);
@@ -829,11 +840,8 @@ header {
 
 
 /*inquiry styles*/
-.inquiry {
-    margin-top: 3em;
-}
 .inquiry .d-flex {
-    min-height: 300px;
+    min-height: 400px;
     text-align: center;
 }
 .inquiry ul {
@@ -846,10 +854,9 @@ header {
     margin-right: 10px;
 }
 .inquiry li a {
-    min-width: 200px;
-    height: 100px;
     font-size: 2em;
     padding: 1em;
+    margin-bottom: 1em;
     font-weight: var(--weight-bold);
     display: flex;
     align-items: center;
@@ -860,6 +867,14 @@ header {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: var(--radius);
 }
+
+@media screen and (max-width: 768px) {
+    .inquiry li a {
+        font-size: 1.5em;
+        padding: .5em 1em;
+    }
+}
+
 
 .inquiry li:hover a {
     background: linear-gradient(325deg, #ebebeb, #ffffff);
@@ -872,7 +887,6 @@ header {
 /* footer styles */
 footer {
     border: 1px solid gainsboro;
-    padding-block: 15px;
     text-align: center;
     font-weight: var(--weight-semi);
 }
